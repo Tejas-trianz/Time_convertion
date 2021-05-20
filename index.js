@@ -32,7 +32,27 @@ const timeconvertion = (val ,fromUnit ,toUnit) =>
         else
             return 'invalid o/p unit';
     }
+    //seconds to hours and minutes
+    else if(fromUnit == 'seconds'){
+        //to minutes
+        if(toUnit == 'minutes'){
+            let calmins = Math.floor(val / 60);
+            let calsecs = (val % 60);
+            return calmins + ':' + calsecs + ' minutes';
+        }
+        //to hours
+        else if(toUnit == 'hours'){
+            let calhrs = Math.floor(val / 3600);
+            let calmins = Math.floor((val % 3600) / 60);
+            return calhrs + ':' + calmins + ' hours';
+        }
+        else
+            return 'invalid o/p unit';
+    }
+    else{
+        return 'invalid i/p unit';
+    }
 }
 
-var result = timeconvertion(3, 'hours','seconds');
+var result = timeconvertion(17000, 'seconds','hours');
 console.log(result);
