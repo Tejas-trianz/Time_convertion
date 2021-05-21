@@ -1,6 +1,6 @@
 const timeconvertion = require('../index');
 
-//Hours to minutes
+//Hours to minutes and seconds
 // console.log(timeconvertion(10,'hours','minutes'));
 test('10 hours equal to 600 minutes', () => {
     expect(timeconvertion(10, 'hours', 'minutes')).toBe('600 minutes');
@@ -26,4 +26,14 @@ test('Value is not greater than 0', () => {
 //check for input units are same
 test('fromUnit and toUnit are same', () => {
     expect(timeconvertion(2, 'minutes', 'minutes')).toBe('Units are same');
+});
+
+//minutes to hours and seconds
+test('90 minutes equal to 1:30 hours', () => {
+    expect(timeconvertion(90, 'minutes', 'hours')).toBe('1:30 hours');
+});
+
+// console.log(timeconvertion(90, 'minutes', 'seconds'))
+test('90 minutes equal to 1:30 seconds', () => {
+    expect(timeconvertion(90, 'minutes', 'seconds')).not.toBe('1:30 hours');
 });
