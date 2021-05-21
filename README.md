@@ -5,3 +5,6 @@ steps:
 2. converting hours to minutes and seconds.
 3. converting minutes to hours and seconds.
 4. converting seconds to minutes and hours.
+
+test case:
+1. added for Hours to minutes conversion.

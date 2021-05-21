@@ -54,5 +54,7 @@ const timeconvertion = (val ,fromUnit ,toUnit) =>
     }
 }
 
-var result = timeconvertion(17000, 'seconds','hours');
-console.log(result);
+// var result = timeconvertion(17000, 'seconds','hours');
+// console.log(result);
+
+module.exports = timeconvertion;
