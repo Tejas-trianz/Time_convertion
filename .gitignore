@@ -4,5 +4,7 @@ npm-debug.log
 .nyc
 .env
 .DS_Store
-
+.vscode
 *.txt
+coverage
+./test/demo.test.js
