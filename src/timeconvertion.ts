@@ -1,4 +1,4 @@
-const timeconvertion = (val, fromUnit, toUnit) => {
+export const timeconvertion = (val:number, fromUnit:string, toUnit:string) => {
     if (typeof (val) !== 'number')
         return 'Value error';
     if (val <= 0)
@@ -53,4 +53,4 @@ const timeconvertion = (val, fromUnit, toUnit) => {
     }
 }
 
-module.exports = timeconvertion;
+// console.log(timeconvertion(1,'hours','minutes'));

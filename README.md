@@ -7,3 +7,5 @@ steps:
 4. converting seconds to minutes and hours.
 
 Added testcases using Jest.
+
+converted to typescript
